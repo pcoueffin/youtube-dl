@@ -1,5 +1,7 @@
 from __future__ import unicode_literals
 
+from .animetoon import AnimeToonIE
+
 try:
     from .lazy_extractors import *
     from .lazy_extractors import _ALL_CLASSES
@@ -44,3 +46,5 @@ def list_extractors(age_limit):
 def get_info_extractor(ie_name):
     """Returns the info extractor class with the given ie_name"""
     return globals()[ie_name + 'IE']
+
+
