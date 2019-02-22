@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from .animetoon import AnimeToonIE
+from .ohentai import OHentaiIE
 
 try:
     from .lazy_extractors import *
